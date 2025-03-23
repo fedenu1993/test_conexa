@@ -23,12 +23,20 @@ Crear una base de datos, por ejemplo: test_conexa_bdd.
 Configurar las credenciales de acceso en un archivo .env en la raíz del proyecto:
 
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_USERNAME=root
+
 DB_PASSWORD=Prueba123
+
 DB_NAME=test_conexa_bdd
+
 JWT_SECRET=secretoSuperSeguro
+
 JWT_EXPIRES_IN=1h
+
+STAR_WARS_API_URL=https://swapi.dev/api
 
 El .env ademas nos ayudara a configurar otras variables globales
 
