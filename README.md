@@ -54,7 +54,7 @@ Usuarios: /users
 
 Películas: /movies
 
-Puedes probarlos con herramientas como Postman o cURL.
+Puedes probarlos con SWAGGER en http://localhost:3000/api
 
 # Notas
 

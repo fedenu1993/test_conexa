@@ -8,6 +8,7 @@ import { User } from './users/entities/user.entity';
 import { MoviesModule } from './movies/movies.module';
 import { SeederService } from './migrations/seeder/seeder.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { Movie } from './movies/entities/movie.entity';
 
 
 @Module({
@@ -23,11 +24,10 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         username: configService.get<string>('DB_USERNAME'),
         password: configService.get<string>('DB_PASSWORD'),
         database: configService.get<string>('DB_NAME'),
-        entities: [User],
+        entities: [User, Movie],
         synchronize: true,
       }),
     }),
-    TypeOrmModule.forFeature([User]),
     AuthModule, 
     UsersModule, 
     MoviesModule
